@@ -1,14 +1,9 @@
-const person = {
-  name: "Amey",
-  walk() {
-    console.log(this);
-  },
+const squre = function (num) {
+  return num * num;
 };
 
-person.walk();
+console.log(squre(2));
 
-//const c = person.walk;
-//c();
+const squre2 = (num) => num * num;
 
-const c = person.walk.bind(person);
-c();
+console.log(squre2(5));
