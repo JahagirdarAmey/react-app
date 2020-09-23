@@ -1,12 +1,6 @@
-const person = {
-  name: "Piyu",
-  walk() {
-    console.log(this);
-  },
-};
+import ReactDOM from "react-dom";
+import React from "react";
 
-person.walk();
+const ele = <h1>Hello</h1>;
 
-const w = person.walk;
-
-w();
+ReactDOM.render(ele, document.getElementById("root"));
