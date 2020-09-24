@@ -1,9 +1,12 @@
-const squre = function (num) {
-  return num * num;
-};
+const jobs = [
+  { id: 1, name: "A" },
+  { id: 2, name: "B" },
+  { id: 3, name: "A" },
+  { id: 4, name: "C" },
+];
 
-console.log(squre(2));
+jobs.filter(function (A) {
+  return A.name == "A";
+});
 
-const squre2 = (num) => num * num;
-
-console.log(squre2(5));
+console.log(jobs.filter((A) => A.name == "A"));
