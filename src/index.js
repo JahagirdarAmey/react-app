@@ -1,12 +1,18 @@
-const jobs = [
-  { id: 1, name: "A" },
-  { id: 2, name: "B" },
-  { id: 3, name: "A" },
-  { id: 4, name: "C" },
-];
+const person = {
+  talk() {
+    var self = this;
+    setTimeout(function () {
+      console.log(self);
+    }, 1000);
+  },
+};
 
-jobs.filter(function (A) {
-  return A.name == "A";
-});
+person.talk();
 
-console.log(jobs.filter((A) => A.name == "A"));
+const person1 = {
+  talk() {
+    setTimeout(() => console.log(this), 1000);
+  },
+};
+
+person1.talk();
